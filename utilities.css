@@ -1,0 +1,27 @@
+
+iframe{
+	width: 100%;
+}
+
+.testimonials-section img{
+	width: 100%;
+
+}
+.features-section img{
+	width: 100%;
+}
+a{
+	color: #444444;
+}
+ul{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+section{
+	padding: 5em 0em;
+}
+.contact-section{
+	margin: 1em;
+	margin-left: 1.5em;
+}
