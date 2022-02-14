@@ -84,6 +84,8 @@ section.features-section{
 .features-list{
 	margin: 0;
 	padding-left: .5em;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(18rem,1fr));
 }
 .features-list li{
 	font-size: 1.1em;
@@ -201,4 +203,53 @@ nav .primary-nav{
 	cursor: pointer;
 	margin: .5em;
 	}
-/*utilities*/
+/* Resposive design started for tablet */
+
+@media only screen and (min-width: 760px){
+	.mobile-menu-exit,.mobile-menu{
+		display: none;
+	}
+	.nav-bar .container{
+		display: grid;
+		grid-template-columns: 180px auto ;
+		justify-content: unset;
+	}
+	.nav-bar nav{
+		display: flex;
+		background: none;
+		justify-content: space-between;
+		position: unset;
+		height: auto;
+		width: 100%;
+		padding: 0;
+
+	}
+
+	.nav-bar nav ul{
+		display: flex;
+	}
+	
+		.nav-bar li a{
+		color: black;
+		font-size: 1em;
+		padding: .1em 1em;
+	}
+
+	ul.primary-nav{
+		margin: 0;
+	}
+	li.current a{
+		font-weight: bold;
+	}
+	li.go-premium-cta a{
+		color: var(--primary-color);
+		border: 3px solid var(--primary-color);
+		border-radius: 5em;
+		font-weight: bold;
+		margin-top: -.2em;
+	}
+	li.go-premium-cta a:hover{
+		background: var(--primary-color);
+		color: #fff;
+	}
+}
