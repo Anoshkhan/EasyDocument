@@ -164,6 +164,9 @@ iframe{
 	height: 300px;
 }
 /* Mobile navigation design */
+nav.menu-btn{
+	display: block;
+}
 nav{
 	position: fixed;
 	right: 0;
