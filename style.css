@@ -14,6 +14,9 @@ body{
 	font-family: 'Poppins', sans-serif;
 
 }
+#contact{
+	scroll-behavior: smooth;
+}
 /*navigation started */
 .nav-bar{
 	background: white;
@@ -192,6 +195,7 @@ nav .primary-nav{
 	text-decoration: none;
 	text-align: center;
 	font-size: 1.1em;
+	transition: .5s;
 
 }
 .nav-bar li a:hover{
@@ -206,6 +210,7 @@ nav .primary-nav{
 /* Resposive design started for tablet */
 
 @media only screen and (min-width: 760px){
+
 	.mobile-menu-exit,.mobile-menu{
 		display: none;
 	}
@@ -251,5 +256,55 @@ nav .primary-nav{
 	li.go-premium-cta a:hover{
 		background: var(--primary-color);
 		color: #fff;
+	}
+	.logo{
+		margin-top: .3em;
+		font-size: 1.3em;
+	}
+}
+/* Resposive design started for desktop */
+@media only screen and (min-width:  1080px){
+	.container{
+		width: 1080px;
+		margin: 0 auto;
+	}
+	.hero .container{
+		display: flex;
+		justify-content: space-between;
+		padding: 5em 3em;
+		text-align: left;
+
+	}
+	.hero .left-col{
+		width: 45%;
+		margin-top: 3em;
+	}
+	.left-col h1{
+		font-size: 3em;
+	}
+	.left-col .hero-cta{
+		display: flex;
+		margin-top: 2em;
+
+	}
+	.hero-cta .primary-cta{
+		margin-left: .3em;
+		margin-right: 1em;
+	}
+	.hero-cta .watch-video-cta{
+		margin-top: 2.6em;
+	}
+	.hero .hero-img{
+		width: 30%;
+		margin-right: 6em;
+	}
+	/*features section started*/
+
+	.features-list{
+		display: block;
+		margin-left: 5em;
+	}
+	.features-list li{
+		font-size: 1.4em;
 	}
 }
