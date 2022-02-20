@@ -307,4 +307,68 @@ nav .primary-nav{
 	.features-list li{
 		font-size: 1.4em;
 	}
+	.features-section{
+		position: relative;
+	}
+	.features-section .container img{
+		display: block;
+		position: absolute;
+		right: 0;
+		width: 400px;
+		top: 150px;
+	}
+
+	
+	.testimonials-section ul{
+		display: flex;
+		padding: 1em 0;
+		margin-top: 1em;
+	}
+	.testimonials-section ul li{
+		margin: 0 1em;
+		font-size: 1rem;
+
+
+	}
+
+	/* contact section started */
+	.contact-section{
+		position: relative;
+	}
+	.contact-section .container{
+		display: flex;
+	}
+	.contact-right{
+		position: absolute;
+		width: 45%;
+		height: 100%;
+		top: 0;
+		right: 0;
+	}
+	.contact-right iframe{
+		height: 100%;
+	}
+}
+@media only screen and (min-width: 1350px){
+
+	.features-section::before{
+		content: ' ';
+		position: absolute;
+		width: 100px;
+		height: 350px;
+		background: var(--primary-color);
+		top: -4em;
+		left: 0;
+		z-index: 100;
+	}
+	.features-section::after{
+		content: ' ';
+		position: absolute;
+		width: 120px;
+		height: 6.8em;
+		background: url(images/dots.svg);
+		top: 3em;
+		left: 3em;
+		z-index: 100;
+	}
 }
